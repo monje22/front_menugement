@@ -1,0 +1,265 @@
+header{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    background-color: #275351;
+    height: 90px;
+}
+
+body{
+    background-color:  #f5e3c5;
+    overflow-x: hidden; /* esconder scrool horizontal*/
+}
+
+a,  nav{
+    color: white;
+    text-decoration: none;
+}
+
+.opciones{
+    display: flex; /* vuelve el contenido horizontal */
+    float: right; /* posicionar a la derecha */
+    font-family: 'Lato', sans-serif; /* estilo de fuente */
+    font-size: 18px; /* tamaño de letra */
+    width: 100%; /* cambio */
+    height: 90px; /* cambio*/
+    justify-content: space-between; /* cambio*/
+    align-items: center; /* cambio*/
+}
+/* cambio */
+.cajita-header{ 
+    width: 12%;
+    height: 90px;
+}
+
+.cajita-logo-menu{
+    width: 2%;
+    height: 90px;
+}
+
+.cajita-logo-receta{
+    width: 5%;
+    height: 90px;
+}
+
+.cajita-menugement{
+    display: flex;
+    width: auto;
+    height: 90px;
+    display: flex;
+    float: left;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #ccbda4;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #9e937f;
+    border-radius: 5px;
+}
+/*bodyDiego*/
+.caja-cuerpo{
+    display: flex;
+    width: 100%;
+    margin-left: -8px;
+    margin-right: -2px;
+
+}
+
+.contenedor-izquierda{
+    background-color: #f30b2e1e;
+}
+
+.caja-izquierda{
+    font-family: 'Lato', cursive;
+    /*font-family: 'Lobster', cursive*/
+    position: static;/*para que se quede en la pantalla por mas que se use el scroll*/
+    top:0px;/*para que se quede con ese margin arriba el sticky*/
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: #333333;
+    height: auto;
+    padding-bottom: 5px;
+    width:  400px;
+    
+    
+}
+.caja-derecha{
+    background-color:  #f5e3c5;
+    height: auto ;
+    width:  100%;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.caja-nombreReceta{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-size: 70px;
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+.caja-ingredientes{
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    /*background-color: #ccbda441;*/
+    /*background-color: #66bdd73b;*/
+
+    /*background-color: #FED5BC;el definidofo*/
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fed5bc52;
+    height: auto;
+    width: auto ;
+}
+
+.caja-descripcion{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: #fed5bc52;
+    height: auto;
+    width: auto;
+
+}
+
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    margin-bottom: -18px;
+    margin-left: -8px;
+    margin-right: -10px;
+    height: 210px;
+    
+
+
+    background: #275351;  
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.cajas{
+    display: inline-block;
+    width: 33%;
+
+    
+}
+
+.cajas3{
+    width: auto;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center  ;
+  }
+  
+  .social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+  }
+
+ .item-logo{
+     margin: 15px;
+ }
+ .menugement{
+    display: flex;
+    font-family: 'Lobster', cursive;
+    align-items: center;
+    width: 25%;
+    font-size: 50px;
+
+ }
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+ .content{
+     position: absolute;
+     bottom: 0;
+     background: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0.5);
+     color: #f1f1f1;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-bottom: 20px;
+     margin-bottom: 15px;
+     width: 140px;
+     height: 160px;
+     font-family: 'Lato', sans-serif;
+     font-size: 13px;
+     text-transform: uppercase;
+     opacity: 0;
+     display: flex;
+     align-items: center; /*centrar verticalmente*/
+     text-align: center;
+ }
+
+ .content:hover{
+    opacity: 1;
+ }
+
+ .container img{
+    vertical-align: middle;
+}
+
+h5{
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-bottom: -10px;
+}
