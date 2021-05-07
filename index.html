@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menugement</title>
+    <link rel="stylesheet" href="/css/estiloPagPrincipal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Creacion del header -->
+
+        <header>
+            <div><a href="index.html"><img src="/Image_Folder/logo.png" width="90px" height="90px"></a></div>
+            <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
+            <nav class="navegacion">
+              <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Categoría</a>
+                  <ul class="submenu">
+                    <li><a href="html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
+                    <li><a href="html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
+                    <li><a href="html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
+                  </ul>
+                </li>
+                <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
+                <li><a href="#footer">Contáctanos</a></li>
+                <li><a href="/html/addReceta.html">Añadir Receta</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <div class="opcion"> 
+          <a href="#IrVentanaFlotante">
+          
+        
+          </a>
+        </div>
+          
+        <div id="IrVentanaFlotante" class="modal">
+            <div class="ventana">
+              <div style="display: flex; justify-content: space-between;">
+              <h2>Sobre Nosotros</h2>
+              <a href="#" onclick="javascript:cerrarVentana()" style='text-decoration:none; color: #333333;'>X</a>
+              </div>
+              <div>
+              <br>
+              <video src="sobreNosotros.mp4" id="vid" controls disablePictureInPicture></video>
+              </div>
+              <br>
+              <div style="float: right;">
+              <input type="button" onclick="cerrarVentana()" class="botonCerrar" value="Cerrar">
+              </div>
+            </div>  
+        </div>
+
+    <!-- Fin del header -->
+    <br>
+    <!-- sección central de recetas -->
+  <div class="contenedor">
+    <input type="hidden" name="escondido" class="key-data">
+    <div class="central-pag" id="adminImg">            
+    </div>
+
+    <!-- sección central de recetas -->
+    </div>
+    <!-- PIE DE PAGINA -->
+    <footer>
+      <script src="/js/principal.js"></script>
+      <script>
+        function guardarOp1(){
+          sessionStorage.setItem('categoriaDeReceta',document.getElementById("categoria1").textContent);
+        }
+
+        function guardarOp2(){
+          sessionStorage.setItem('categoriaDeReceta',document.getElementById("categoria2").textContent);
+        }
+
+        function guardarOp3(){
+          sessionStorage.setItem('categoriaDeReceta',document.getElementById("categoria3").textContent);
+        }
+
+        function cerrarVentana(){
+          document.location.href = '#';
+          document.getElementById("vid").load();
+        }
+
+      </script>
+        <div class = "cajas">     
+          <br>
+          <h2 id="footer" style="font-family: 'Lato', sans-serif;">SOBRE NOSOTROS</h2>
+          <h3 style="font-size: 18px; font-family: 'Lato', sans-serif;">Porque comer saludable, también es delicioso</h3>
+          
+          
+        </div>
+  
+        <div class = "cajas">
+          <h5 style="font-family: 'Lato', sans-serif;" ><b>CONTÁCTANOS</b><br>
+            Teléfono: +591 75467804<br>
+            Correo: menugement@gmail.com<br><br>
+            Redes sociales:</h5>
+          
+          
+          <div class="social-media">
+              
+              <a href="https://www.facebook.com/Menugement-100564128845454" target="_blank" class="social-media-icon">   
+  
+              <i class="bx bxl-facebook"> </i>
+  
+              </a>
+              <a href="https://twitter.com/menugement" target="_blank" class="social-media-icon">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/menugement/" target="_blank" class="social-media-icon">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </div>
+          
+        </div>
+    
+  
+        <div class = "cajas3">
+          <img src="/Image_Folder/logo.png" class = "item-logo"  width="150px" height="150">          
+        </div>
+        <div class="menugement"><nav> Menugement</nav></div>
+  
+      </footer>
+  </div>
+</body>
+</html>
