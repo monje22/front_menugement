@@ -287,6 +287,8 @@
                 console.log(errors[0]);
                 alert(errors[0].msg);
                 exit();
+              }else{
+                alert("Añadido exitosamente")
               }
             })
 
@@ -301,7 +303,7 @@
                 console.log(errors);
               }
             })
-            alert("Receta añadida exitosamente");
+            exit();
           }catch(error){
             console.log(error);
           }
