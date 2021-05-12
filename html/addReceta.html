@@ -280,7 +280,6 @@
               headers: {"Accept":"application/json", "Content-Type":"application/json"},
               body: JSON.stringify(receta)
               
-              
             }).then(async(res)=>{
               const {errors} = await res.json();
               if(errors){
@@ -288,10 +287,9 @@
                 alert(errors[0].msg);
                 exit();
               }else{
-                alert("Añadido exitosamente")
+                alert("Añadido exitosamente");
               }
             })
-
 
             fetch("https://aqueous-journey-05187.herokuapp.com/receta/uploadImage", {
               method: "POST",
