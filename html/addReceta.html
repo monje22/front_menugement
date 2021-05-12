@@ -108,18 +108,29 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <div class="form4">
-      <img src="logo.png" id="imagenAdd" style="margin-left: 30%;" alt="" height="160px" width="160px">
-      <input type="file" name="myImage" id="myImage" style="margin-top: 10px; margin-left: 15%;" accept="image/jpeg, image/png" required><br>
-      <br> <center><label for="">Imagen de receta *</label></center>
+      <div style="padding-top: 10px ; padding-bottom: 10px;">
+        <center><label for="">Imagen de receta *</label></center>
+      </div>
+      <div>
+      <img src="/Image_Folder/ingrese imagen.png" id="imagenAdd" style="margin-left: 30%;" alt="" height="160px" width="160px">
+     </div>
+     <div class="contFile">
+     <div class="div-file">
+       Subir Imagen
+      <input type="file" class="hide_file" name="myImage" id="myImage" style="margin-top: 10px; margin-left: 15%;" accept="image/jpeg, image/png" required><br>
+     </div>
+     </div>
     </div>
+
     </div>
 
     <div class="form5">
-      <input type="submit" value="Añadir receta" onclick="HTMLFormElement.reset()">
-      <input type="button" onclick="location.href='paginaPrincipal.html'" value="Cancelar" name="" id="">
+      <input type="submit" class="boton" value="Añadir receta" onclick="HTMLFormElement.reset()">
+      <input type="button" class="boton" onclick="location.href='/./index.html'" value="Cancelar" name="" id="">
     </div>
 
     </form>
+    <br>
 
     <!-- sección central de recetas -->
     
