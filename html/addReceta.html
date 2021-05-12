@@ -130,6 +130,7 @@
     </div>
 
     </form>
+    <br>
 
     <!-- sección central de recetas -->
     
@@ -283,7 +284,9 @@
             }).then(async(res)=>{
               const {errors} = await res.json();
               if(errors){
-                console.log(errors);
+                console.log(errors[0]);
+                alert(errors[0].msg);
+                exit();
               }
             })
 
