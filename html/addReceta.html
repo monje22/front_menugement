@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Image_Folder/logoMenugement.ico">
     <style>
       label{
         font-family: 'Lato', sans-serif;
@@ -94,7 +95,7 @@
     <div class="cont2">
     <div class="form2">
       <label for="">Tiempo de preparación (Min) *</label><br><br>
-      <input id="rangeInput" type="range" min="5" max="120" oninput="amount.value=rangeInput.value" />
+      <input id="rangeInput" type="range" min="5" max="120" value="100" oninput="amount.value=rangeInput.value" />
       <input id="amount" type="number" class="amountCaja" value="100" min="5" max="120" oninput="rangeInput.value=amount.value" readonly />
     </div>
     </div>
@@ -125,7 +126,7 @@
     </div>
 
     <div class="form5">
-      <input type="submit" class="boton" value="Añadir receta" onclick="HTMLFormElement.reset()">
+      <input type="submit" class="boton" value="Añadir receta">
       <input type="button" class="boton" onclick="location.href='/./index.html'" value="Cancelar" name="" id="">
     </div>
 
@@ -246,7 +247,6 @@
         <div class="menugement"><nav> Menugement</nav></div>
   
       </footer>
-      <script src="/js/validarReceta.js"></script>
       <script>
         const formulario = document.getElementById("formularioupload");
         const inputfile = document.getElementById("myImage");
@@ -286,12 +286,10 @@
               if(errors){
                 console.log(errors[0]);
                 alert(errors[0].msg);
+                window.location.href = "addReceta.html";
                 exit();
-              }
-            })
-
-
-            fetch("https://aqueous-journey-05187.herokuapp.com/receta/uploadImage", {
+              }else{
+                fetch("https://aqueous-journey-05187.herokuapp.com/receta/uploadImage", {
               method: "POST",
               body: data
               
@@ -301,7 +299,23 @@
                 console.log(errors);
               }
             })
-            alert("Receta añadida exitosamente");
+                alert("Receta añadida exitosamente");
+                window.location.href = "addReceta.html";
+              }
+            })
+
+
+          /*  fetch("https://aqueous-journey-05187.herokuapp.com/receta/uploadImage", {
+              method: "POST",
+              body: data
+              
+            }).then(async(res)=>{
+              const {errors} = await res.json();
+              if(errors){
+                console.log(errors);
+              }
+            }) */ 
+
           }catch(error){
             console.log(error);
           }
