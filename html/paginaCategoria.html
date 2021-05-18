@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menugement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="/css/estiloPagPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"/>
@@ -16,25 +17,37 @@
 
     <!-- Creacion del header -->
 
-        <header>
-          <div><a href="/./index.html"><img src="/Image_Folder/logo.png" width="90px" height="90px"></a></div>
-            <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
-            <nav class="navegacion">
-              <ul class="menu">
-                <li><a href="/./index.html">Inicio</a></li>
-                <li><a href="#">Categoría</a>
-                  <ul class="submenu">
-                    <li><a href="/html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
-                    <li><a href="/html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
-                    <li><a href="/html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
-                  </ul>
-                </li>
-                <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
-                <li><a href="#footer">Contáctanos</a></li>
-                <li><a href="/html/addReceta.html">Añadir Receta</a></li>
+    <header>
+          
+      <div class = "logoMQ"><a href="/./index.html"><img src="/Image_Folder/logo.png" width="90px" height="90px"></a></div>
+      <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
+   <nav class="navegacion">  
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+    </label>
+
+        <ul class="menu">
+          <li><a href="/./index.html">Inicio</a></li>
+          <li><a href="/html/ProgMenu.html">Programar Menú</a></li>
+          <li><a href="#">Categoría</a>
+            <div class ="responsive-cat">
+              <ul class="submenu">
+                <li><a href="/html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
+                <li><a href="/html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
+                <li><a href="/html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
               </ul>
-            </nav>
-        </header>
+            </div>
+          </li>
+          <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
+          <li><a href="#footer">Contáctanos</a></li>
+          <li><a href="/html/addReceta.html">Añadir receta</a></li>
+          
+        </ul>
+        <div class = "seccionMQ"></div>
+    </nav>
+    
+    </header>
 
         <div class="opcion"> 
           <a href="#IrVentanaFlotante">
@@ -91,15 +104,15 @@
           document.getElementById("vid").load();
         }
       </script>
-        <div class = "cajas">     
+        <div class = "cajas-1">     
           <br>
           <h2 id="footer" style="font-family: 'Lato', sans-serif;">SOBRE NOSOTROS</h2>
           <h3 style="font-size: 18px; font-family: 'Lato', sans-serif;">Porque comer saludable, también es delicioso</h3>
           
           
         </div>
-  
-        <div class = "cajas">
+        
+        <div class = "cajas-2">
           <h5 style="font-family: 'Lato', sans-serif;" ><b>CONTÁCTANOS</b><br>
             Teléfono: +591 75467804<br>
             Correo: menugement@gmail.com<br><br>
@@ -109,9 +122,9 @@
           <div class="social-media">
               
               <a href="https://www.facebook.com/Menugement-100564128845454" target="_blank" class="social-media-icon">   
-  
+        
               <i class="bx bxl-facebook"> </i>
-  
+        
               </a>
               <a href="https://twitter.com/menugement" target="_blank" class="social-media-icon">
                 <i class="bx bxl-twitter"></i>
@@ -122,12 +135,12 @@
             </div>
           
         </div>
+        
     
-  
-        <div class = "cajas3">
-          <img src="/Image_Folder/logo.png" class = "item-logo"  width="150px" height="150">          
+        <div class = "cajas-3">
+          <img src="/Image_Folder/logo.png" class = "item-logo"  width="150px" height="150px">          
         </div>
-        <div class="menugement"><nav> Menugement</nav></div>
+        <div class="cajas-4">Menugement</div>
   
       </footer>
   </div>

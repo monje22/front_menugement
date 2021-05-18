@@ -1,0 +1,25 @@
+.etiquetaPM{
+    font-family: 'lato', sans-serif;
+    color: black;
+    font-size: 16px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+ }
+
+ .contPM{
+     background-color: #f30b2e1e;
+     border-radius: 8px;
+     height: 285px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     width: 50%;
+ }
+
+ .tituloPM{
+    font-family: 'Lobster', cursive;
+    color: #333333;
+    font-size: 70px;
+    padding-left: 10px;
+    padding-top: 10px;
+ }
