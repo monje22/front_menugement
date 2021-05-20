@@ -31,45 +31,36 @@
         <div class="contPM">
         <label for="" class="etiquetaPM">Desayuno</label><br><br>
         <div style="height: 230px; display: flex; align-items: center;">
-            <div class="carousel">
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-            </div>
+            <div class="carousel" id="carDes" style="height: 260px;"></div>
         </div>
         </div>
         
         <div class="contPM">
         <label for="" class="etiquetaPM">Almuerzo</label><br><br>
         <div style="height: 230px; display: flex; align-items: center;">
-            <div class="carousel" >
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-            </div>
+            <div class="carousel" id="carAlm" style="height: 260px;"></div>
         </div>
         </div>
 
         <div class="contPM">
         <label for="" class="etiquetaPM">Cena</label><br><br>
         <div style="height: 230px; display: flex; align-items: center;">
-            <div class="carousel" >
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-                <a class="carousel-item" href="#"><img src="/Image_Folder/logo.png" width="180px" height="180px"></a>
-            </div>
+            <div class="carousel" id="carCen" style="height: 260px;"></div>
         </div>
         </div>
-
         <div>
         <center>
-            <input type="button" class="botonCerrar" style="width: 50%;" value="Crear Menú">
+            <form action="" id="botCrear">
+            <input type="hidden" name="escondido1" id="key-data-des" value="3">
+            <input type="hidden" name="escondido2" id="key-data-alm" value="1">
+            <input type="hidden" name="escondido3" id="key-data-cen" value="11">
+            <div class="contPM" style="height: 70px;">
+                <label for="" class="etiquetaPM" style="margin-right: 35px;">Nombre Menú:</label>
+                <input type="text" style="width: 60%; float: left;" id="nomMenu" required>
+            </div>
+
+            <input type="submit" class="botonCerrar" style="width: 50%;" value="Crear Menú">
+            </form>
         </center>
         </div>
     </div>
@@ -80,11 +71,24 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems);
       });
 
     </script>
+    <script src="/js/slidersRec.js"></script>
+
+    <script>
+
+    function contador(){
+
+        var elems2 = document.querySelectorAll('.carousel');
+        var instances2 = M.Carousel.init(elems2);
+    }
+        setTimeout('contador()',1000);
+    </script>
+    <script src="/js/menusDatos.js"></script>
 </body>
 </html>
