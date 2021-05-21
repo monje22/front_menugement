@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Menus</title>
+        <link rel="stylesheet" href="/css/estiloListaMenu.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="/css/estiloPagPrincipal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/Image_Folder/logoMenugement.ico">
+        <!--Compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">         -->
+        
+        
+    </head>
+    <body>
+      <header>
+        <div class = "logoMQ"><a href="/./index.html"><img src="/Image_Folder/logo.png" width="90px" height="90px"></a></div>
+        <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
+        <nav class="navegacion">  
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
+            <ul class="menu">
+                <li><a href="/./index.html">Inicio</a></li>
+                <li><a href="/html/menus.html">Programar Menú</a></li>
+                <li><a href="#">Categoría</a>
+                    <div class ="responsive-cat">
+                    <ul class="submenu">
+                        <li><a href="/html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
+                        <li><a href="/html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
+                        <li><a href="/html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
+                <li><a href="#footer">Contáctanos</a></li>
+                <li><a href="/html/addReceta.html">Añadir receta</a></li>
+                </ul>
+                <div class = "seccionMQ"></div>
+            </nav>
+      </header>
+             
+         
+        <div class= "menus" id="menu-form" >
+          <label class="titulo"><h1>Menús</h1></label>
+            <a href="ProgMenu.html">
+              <input type="button" class="Add-menu" name="boton-menu" value="Añadir menú">
+            </a>
+           
+            <table class="tabla">
+                <thead>
+                  <tr>
+                      <th>Nombre Menú</th>
+                      <th>Desayuno</th>
+                      <th>Almuerzo</th>
+                      <th>Cena</th>
+                  </tr>
+                </thead>
+                <tbody id="cuerpoT">
+                </tbody>
+              </table>
+        </div>
+      <footer>
+        <script src="/js/recuperaMenu.js"></script>
+        <div class = "cajas-1">
+            <br>
+            <h2 id="footer" style="font-family: 'Lato', sans-serif;">SOBRE NOSOTROS</h2>
+            <h3 style="font-size: 18px; font-family: 'Lato', sans-serif;">Porque comer saludable, también es delicioso</h3>
+        </div>
+        <div class = "cajas-2">
+            <h5 style="font-family: 'Lato', sans-serif;" ><b>CONTÁCTANOS</b><br>
+            Teléfono: +591 75467804<br>
+            Correo: menugement@gmail.com<br><br>
+            Redes sociales:</h5>
+        <div class="social-media">  
+            <a href="https://www.facebook.com/Menugement-100564128845454" target="_blank" class="social-media-icon">   
+            <i class="bx bxl-facebook"> </i>
+            </a>
+            <a href="https://twitter.com/menugement" target="_blank" class="social-media-icon">
+                <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/menugement/" target="_blank" class="social-media-icon">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            </div>
+        </div>
+        <div class = "cajas-3">
+            <img src="/Image_Folder/logo.png" class = "item-logo"  width="150px" height="150px">          
+            </div>
+        <div class="cajas-4">Menugement</div>
+        </footer>
+
+    </body>
+   
+</html>

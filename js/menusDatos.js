@@ -37,7 +37,7 @@ boton.addEventListener("submit", (e)=>{
             window.location.href = "ProgMenu.html";
         }else{
             console.log("todo OK");
-            window.location.href = "visualizarMenu.html";
+            window.location.href = "menus.html";
         }
     });
 });

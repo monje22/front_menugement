@@ -8,7 +8,7 @@
  }
 
  .contPM{
-     background-color: #f30b2e1e;
+     background-color: #E8CB9A;
      border-radius: 8px;
      height: 285px;
      margin-bottom: 20px;
@@ -22,4 +22,17 @@
     font-size: 70px;
     padding-left: 10px;
     padding-top: 10px;
+ }
+ .botonCerrar{
+    border-color: #333333;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 10px; 
+    margin-left: 10px;
+ }
+ .botonCerrar:hover{
+    border-color: black;
+    color: #4f774f;
+    background-color: honeydew;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
  }

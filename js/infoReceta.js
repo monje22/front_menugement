@@ -65,20 +65,7 @@ const mostrarReceta = async function(){
 
             ImagenRec.src = `https://aqueous-journey-05187.herokuapp.com/imagenes/imagen/${element.IMAGEN}`;
         }
-        /*
-        console.log(element.IMAGEN);
-        let img = document.createElement("img");
-        let div1 = document.createElement("div");
-        let context = document.createElement("div");
-        context.className = "container";
-        contImg.appendChild(context);
-
-        div1.innerHTML = `<h3><a href="receta.html">${element.NOMBRERECETA}</a></h3>`;
-        img.src = element.IMAGEN;
-        img.className = "item-img";
-        div1.className = "content";
-        context.appendChild(img);
-        context.appendChild(div1);*/
+        
     })
 }
 

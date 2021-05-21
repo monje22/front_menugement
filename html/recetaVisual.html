@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menugement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="/css/estiloReceta.css">
+    <link rel="stylesheet" href="/css/estiloRecetaVisual.css">
     <link rel="stylesheet" href="/css/estiloPagPrincipal.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"/>
@@ -103,6 +103,15 @@
       </div>    
       <div class = "caja-derecha">
         <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec"></nav></div>
+        <br>
+        <div class = "desaAlmuCena">
+          <div class="subdesaAlmuCena">
+              <div class = "activo"><a href = "#pagina1">Desayuno</a></div>
+              <div class = "almuerzito"><a href = "#pagina2">Almuerzo</a></div>
+              <div class = "cenita"><a href = "#pagina3">Cena</a></div>            
+          </div>
+      </div>
+      <br><br><br><br>
         <div class = "caja-ingredientes" id="ingreRec">
           <p><b>Ingredientes:</b></p>
           
@@ -115,9 +124,101 @@
       </div>
     </div>
 
+    <!--PAGINA 2-->
+    <div class = "caja-cuerpo" id = "pagina2">
+      <div class = "contenedor-izquierda">
+        <div class = "caja-izquierda">
+          <div class = "caja-imgReceta"></div>
+          <br><br><br>
+          <div><img src="/Image_Folder/logo.png" width="210px" height="210px" id="ImagRec2"></div>
+          <h2>Dificultad:</h2>
+          <p id="DifRec2"></p>
+          <div>
+            <img src="/Image_Folder/estrella.png" id="estrella12" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella22" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella32" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella42" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella52" alt="" width="30px" height="30px">
+          </div>
+          <h2>Tiempo de preparación:</h2>
+          <p id="TiemRec2"></p>
+          <h2>Categoría:</h2>
+          <p id="CatRec2"></p>
+          
+        </div>  
+      </div>    
+      <div class = "caja-derecha">
+        <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec2"></nav></div>
+        <br>
+        <div class = "desaAlmuCena">
+          <div class="subdesaAlmuCena">
+              <div class = "desayunito"><a href = "#pagina1">Desayuno</a></div>
+              <div class = "activo"><a href = "#pagina2">Almuerzo</a></div>
+              <div class = "cenita"><a href = "#pagina3">Cena</a></div>            
+          </div>
+          
+      </div>
+      <br><br><br><br>
+        <div class = "caja-ingredientes" id="ingreRec2">
+          <p><b>Ingredientes:</b></p>
+        </div>
+
+        <div class = "caja-descripcion" id="DescRec2">
+          <p><b>Preparación:</b></p>
+        </div>
+      </div>
+    </div>
+
+     <!--PAGINA 3-->
+    <div class = "caja-cuerpo" id = "pagina3">
+      <div class = "contenedor-izquierda">
+        <div class = "caja-izquierda">
+          <div class = "caja-imgReceta"></div>
+          <br><br><br>
+          <div><img src="/Image_Folder/logo.png" width="210px" height="210px" id="ImagRec3"></div>
+          <h2>Dificultad:</h2>
+          <p id="DifRec3"></p>
+          <div>
+            <img src="/Image_Folder/estrella.png" id="estrella13" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella23" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella33" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella43" alt="" width="30px" height="30px">
+            <img src="/Image_Folder/estrella.png" id="estrella53" alt="" width="30px" height="30px">
+          </div>
+          <h2>Tiempo de preparación:</h2>
+          <p id="TiemRec3"></p>
+          <h2>Categoría:</h2>
+          <p id="CatRec3"></p>
+          
+        </div>  
+      </div>    
+      <div class = "caja-derecha">
+        <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec3"></nav></div>
+        <br>
+        <div class = "desaAlmuCena">
+          <div class="subdesaAlmuCena">
+              <div class = "desayunito"><a href = "#pagina1">Desayuno</a></div>
+              <div class = "almuerzito"><a href = "#pagina2">Almuerzo</a></div>
+              <div class = "activo"><a href = "#pagina3">Cena</a></div>            
+          </div>
+      </div>
+      <br><br><br><br>
+        <div class = "caja-ingredientes" id="ingreRec3">
+          <p><b>Ingredientes:</b></p>
+        </div>
+
+        <div class = "caja-descripcion" id="DescRec3">
+          <p><b>Preparación:</b></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
     <!-- PIE DE PAGINA -->
     <footer>
-      <script src="/js/infoReceta.js"></script>
+      <script src="/js/infoReceta3.js"></script>
       <script>
         function guardarOp1(){
           sessionStorage.setItem('categoriaDeReceta',document.getElementById("categoria1").textContent);

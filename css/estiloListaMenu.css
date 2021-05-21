@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.menus{
+    margin: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #E8CB9A;
+    width:auto;
+    height:auto;
+    transform: (-50%,-50%);
+    top: 20%;   
+    left: 23%;
+    box-sizing: border-box;   
+    padding: 70px 30px;
+    padding-top: 40px;
+
+}
+.tabla{
+    width: 100%;
+    height: 200px;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #E8CB9A;
+    border-collapse: inherit;
+    
+}
+th{
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+td{
+    padding: 5px 30px;
+    text-align: center;
+    border-bottom:1px dashed grey ;
+}
+
+.ver-menu{
+    border-color: #333333; 
+    font-size: 16px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    background-color: #275351;
+}
+.ver-menu:hover{
+    border-color: black;
+    color: rgba(0, 128, 0, 0.637);
+    background-color: honeydew;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+   
+
+}
+
+.Add-menu{
+    margin-left: 85%;
+    /* position: relative; */
+    font-size: 20px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: #275351;
+    border-color: #333333; 
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.Add-menu:hover{
+    border-color: black;
+    color: rgba(0, 128, 0, 0.637);
+    background-color: honeydew;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+.titulo{
+    text-align: center;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+
+}

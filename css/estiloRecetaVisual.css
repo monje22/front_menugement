@@ -1,3 +1,51 @@
+.prueba1:hover{
+    color:black;
+}
+.activo{
+    background: #275351;
+    width: 33%;
+    height: 50px;
+    /*margin-top: -12px;*/
+
+}
+
+.desaAlmuCena{
+    
+    width: 400px;
+    background-color: #3F8280;
+    height: 50px;
+    float:right;
+
+        
+}
+
+.subdesaAlmuCena{
+    display: flex;
+    font-family: 'Lato', sans-serif ;
+    flex-direction: row;
+    font-size: 20px;
+    /*margin-top: 12px;*/
+    text-align: center;
+    
+  /*
+    margin-right: 10%;
+    margin-top: 12px;*/
+}   
+
+
+
+.desayunito{
+    width: 34%;
+}
+.almuerzito{
+    width: 33%;
+}
+.cenita{
+    width: 33%;
+}
+
+
+
 header{
     margin-top: -10px;
     margin-left: -10px;
@@ -263,3 +311,64 @@ h5{
 h2{
     margin-bottom: -10px;
 }
+
+/*media query*/
+@media (max-width: 1250px){
+    .caja-izquierda{
+        font-family: 'Lato', cursive;
+        /*font-family: 'Lobster', cursive*/
+        position: static;/*para que se quede en la pantalla por mas que se use el scroll*/
+        top:0px;/*para que se quede con ese margin arriba el sticky*/
+        text-align: center;
+        display: block;
+        margin: auto;
+        color: #333333;
+        height: auto;
+        padding-bottom: 5px;
+        width:  350px;   
+    }
+
+}
+    @media (max-width: 1000px){
+        .caja-izquierda{
+
+            width:  300px;   
+        }
+
+    }
+    @media (max-width: 850px){
+        .caja-izquierda{
+     
+            width:  250px;   
+        }
+    
+        
+    
+    }
+    @media (max-width: 750px){
+        .caja-izquierda{
+            
+            width:  300px;   
+        }
+
+        .caja-cuerpo{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: -8px;
+            margin-right: -2px;
+        
+        }
+        .contenedor-izquierda{
+            display: flex;
+            flex-direction: row;
+            margin-right: -16px;
+        }
+    
+    }
+
+    @media (max-width: 500px){
+        .desaAlmuCena{
+            width: 300px;
+        }
+    }
