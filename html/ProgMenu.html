@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <a href="/./index.html">
+    <a href="/html/menus.html">
     <input type="button" class="botonCerrar" value="< volver">
     </a>
 
@@ -56,11 +56,12 @@
             <input type="hidden" name="escondido3" id="key-data-cen" value="11">
             <div class="contPM" style="height: 70px;">
                 <label for="" class="etiquetaPM" style="margin-right: 35px;">Nombre Menú:</label>
-                <input type="text" style="width: 60%; float: left;" id="nomMenu" required>
+                <input type="text" style="width: 60%; float: left;" id="nomMenu" pattern="[,áéíóúa-zA-Z ÁÉÍÓÚñÑ]+" title="Sólo se aceptan caracteres alfabéticos" minlength="3" maxlength="70" required>
             </div>
 
             <input type="submit" class="botonCerrar" style="width: 50%;" value="Crear Menú">
             </form>
+            <br>
         </center>
         </div>
     </div>

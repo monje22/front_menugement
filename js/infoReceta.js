@@ -20,15 +20,15 @@ const mostrarReceta = async function(){
     receta.map(function (element){
 
         if(element.NOMBRERECETA == sessionStorage.getItem('nombre')){         
-            nombreRec.innerHTML = element.NOMBRERECETA;
+            nombreRec.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
             console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
-            parafo.innerHTML = element.INGREDIENTES.replace(/\n/g, '<br>');
+            parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec.append(parafo);
 
             let parafo1 = document.createElement('p');
-            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.replace(/\n/g, '<br>');
+            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.toLowerCase().replace(/\n/g, '<br>');
             DescripRec.append(parafo1);
 
             if(element.DIFICULTAD == 1){

@@ -34,15 +34,15 @@ const mostrarReceta = async function(){
     receta.map(function (element){
 
         if(element.NOMBRERECETA == sessionStorage.getItem('visualDes')){         
-            nombreRec.innerHTML = element.NOMBRERECETA;
+            nombreRec.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
             console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
-            parafo.innerHTML = element.INGREDIENTES.replace(/\n/g, '<br>');
+            parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec.append(parafo);
 
             let parafo1 = document.createElement('p');
-            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.replace(/\n/g, '<br>');
+            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.toLowerCase().replace(/\n/g, '<br>');
             DescripRec.append(parafo1);
 
             if(element.DIFICULTAD == 1){
@@ -82,15 +82,15 @@ const mostrarReceta = async function(){
 
 
         if(element.NOMBRERECETA == sessionStorage.getItem('visualAlm')){         
-            nombreRec2.innerHTML = element.NOMBRERECETA;
+            nombreRec2.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
             console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
-            parafo.innerHTML = element.INGREDIENTES.replace(/\n/g, '<br>');
+            parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec2.append(parafo);
 
             let parafo1 = document.createElement('p');
-            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.replace(/\n/g, '<br>');
+            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.toLowerCase().replace(/\n/g, '<br>');
             DescripRec2.append(parafo1);
 
             if(element.DIFICULTAD == 1){
@@ -130,15 +130,15 @@ const mostrarReceta = async function(){
 
 
         if(element.NOMBRERECETA == sessionStorage.getItem('visualCen')){         
-            nombreRec3.innerHTML = element.NOMBRERECETA;
+            nombreRec3.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
             console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
-            parafo.innerHTML = element.INGREDIENTES.replace(/\n/g, '<br>');
+            parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec3.append(parafo);
 
             let parafo1 = document.createElement('p');
-            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.replace(/\n/g, '<br>');
+            parafo1.innerHTML = element.DESCRIPCIONPREPARACION.toLowerCase().replace(/\n/g, '<br>');
             DescripRec3.append(parafo1);
 
             if(element.DIFICULTAD == 1){
