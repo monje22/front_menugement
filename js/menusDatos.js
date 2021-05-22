@@ -1,5 +1,5 @@
 const subirMenu = async(h1,h2,h3,nm)=> {
-    let url = "http://aqueous-journey-05187.herokuapp.com/menus/nuevoMenu";
+    let url = "https://aqueous-journey-05187.herokuapp.com/menus/nuevoMenu";
     let obj = {
         NOMBREMENU: nm,
         IDDESAYUNO: h1,

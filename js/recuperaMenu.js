@@ -1,5 +1,5 @@
 const nuevaMenu = async() =>{
-    const server = "http://aqueous-journey-05187.herokuapp.com/menus/getMenu";
+    const server = "https://aqueous-journey-05187.herokuapp.com/menus/getMenu";
     const response = await fetch(server);
 
     const rows = await response.json();
