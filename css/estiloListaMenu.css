@@ -60,18 +60,7 @@ td{
 
 }
 
-.Add-menu{
-    margin-left: 85%;
-    /* position: relative; */
-    font-size: 20px;
-    height: 40px;
-    border-radius: 8px;
-    color: white;
-    background-color: #275351;
-    border-color: #333333; 
-    font-weight: 500;
-    margin-bottom: 10px;
-}
+
 .Add-menu:hover{
     border-color: black;
     color: rgba(0, 128, 0, 0.637);
@@ -85,4 +74,62 @@ td{
     font-family: 'Lobster', cursive;
     font-size: 25px;
 
+}.Add-menu{
+    margin-left: 75%;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: teal;
+    border-color: #333333; 
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.button{
+    height: 600px;
+}
+
+tr{
+    margin: 0px;
+}
+
+@media(max-width: 730px){
+    .Add-menu{
+        margin-left: 70%;
+    }
+}
+@media(max-width: 600px){
+    .Add-menu{
+        margin-left: 65%;
+    }    
+}
+@media(max-width: 500px){
+    .Add-menu{
+        margin-left: 60%;
+    }
+    .menus{
+        width: auto;
+        margin: -10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: #f30b2e1e;
+        
+        
+         
+        left: 23%;
+          
+        padding: 70px 30px;
+        
+    }
+}
+@media(max-width: 400px){
+    .Add-menu{
+        margin-left: 55%;
+    }
+}
+@media(max-width: 350px){
+    .Add-menu{
+        margin-left: 50%;
+    }
 }
