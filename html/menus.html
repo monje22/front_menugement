@@ -19,6 +19,9 @@
         
     </head>
     <body>
+
+            <!-- creacion del header -->
+
       <header>
         <div class = "logoMQ"><a href="/./index.html"><img src="/Image_Folder/logo.png" width="90px" height="90px"></a></div>
         <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
@@ -46,7 +49,32 @@
                 <div class = "seccionMQ"></div>
             </nav>
       </header>
-             
+      <div class="opcion"> 
+        <a href="#IrVentanaFlotante">
+        
+      
+        </a>
+      </div>
+        
+        <div id="IrVentanaFlotante" class="modal">
+            <div class="ventana">
+            <div style="display: flex; justify-content: space-between;">
+            <h2>Sobre Nosotros</h2>
+            <a href="#" onclick="javascript:cerrarVentana()" style='text-decoration:none; color: #333333;'>X</a>
+            </div>
+            <div>
+            <br>
+            <video src="/./sobreNosotros.mp4" id="vid" controls disablePictureInPicture></video>
+            </div>
+            <br>
+            <div style="float: right;">
+            <input type="button" onclick="cerrarVentana()" class="botonCerrar" value="Cerrar">
+            </div>
+            </div>  
+        </div>
+
+                     <!--fin creacion header  -->
+                     
          
         <div class= "menus" id="menu-form" >
           <label class="titulo"><h1>Menús</h1></label>

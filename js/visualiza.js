@@ -40,5 +40,9 @@ const mostrarVis = async function(){
         }
     })
 }
+function cerrarVentana(){
+    document.location.href = '#';
+    document.getElementById("vid").load();
+  }
 
 mostrarVis();

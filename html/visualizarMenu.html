@@ -16,6 +16,9 @@
     <link rel="shortcut icon" href="/Image_Folder/logoMenugement.ico">
 </head>
 <body>
+
+            <!-- construccion del header -->
+
 <header>
     <div class = "logoMQ"><a href="/./index.html"><img src="/./Image_Folder/logo.png" width="90px" height="90px"></a></div>
     <div class="cajita-menugement"><nav style="font-family: 'Lobster', cursive;">Menugement</nav></div>
@@ -43,6 +46,30 @@
             <div class = "seccionMQ"></div>
         </nav>
         </header>
+
+        <div class="opcion"> 
+            <a href="#IrVentanaFlotante">
+            
+          
+            </a>
+          </div>
+            
+            <div id="IrVentanaFlotante" class="modal">
+                <div class="ventana">
+                <div style="display: flex; justify-content: space-between;">
+                <h2>Sobre Nosotros</h2>
+                <a href="#" onclick="javascript:cerrarVentana()" style='text-decoration:none; color: #333333;'>X</a>
+                </div>
+                <div>
+                <br>
+                <video src="/./sobreNosotros.mp4" id="vid" controls disablePictureInPicture></video>
+                </div>
+                <br>
+                <div style="float: right;">
+                <input type="button" onclick="cerrarVentana()" class="botonCerrar" value="Cerrar">
+                </div>
+                </div>  
+            </div>
     
         <!-- Creacion de los cards -->
         <h1 class = "title" id="titMenu"></h1>
@@ -70,9 +97,12 @@
                 </div>
             </div>
         </div>
-        <div class="boton">
+        <a href="ProgMenu.html">
+            <input type="button" class="bot" name="boton-menu" value="Detalle Menú">
+          </a>
+        <!-- <div class="boton">
            <a href="/html/recetaVisual.html"><button class="bot">Detalle Menu</button></a>
-        </div>
+        </div> -->
         <!-- fin cards -->
 
         <footer>

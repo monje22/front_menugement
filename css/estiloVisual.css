@@ -33,7 +33,7 @@
    
   
   }
-  .boton :hover{
+  .bot:hover{
     border-color: black;
     color: green;
     background-color: honeydew;
@@ -53,6 +53,12 @@
     font-size: 15px;
     border-radius: 5px;
     font-weight: 900;
+
+    margin-left: 50%;
+    margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+    
 }
 p{
   font-family: 'Nunito Sans', sans-serif;

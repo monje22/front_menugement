@@ -50,4 +50,9 @@ const mandarReceta = (visDes,visAlm,visCen,visMenu)=>{
     sessionStorage.setItem('visualMenu',visMenu);
 }
 
+function cerrarVentana(){
+    document.location.href = '#';
+    document.getElementById("vid").load();
+  }
+
 mostrarMenu();
