@@ -36,7 +36,7 @@ boton.addEventListener("submit", (e)=>{
             alert(errors[0].msg);
             window.location.href = "ProgMenu.html";
         }else{
-            console.log("todo OK");
+            alert("Menú creado exitosamente");
             window.location.href = "menus.html";
         }
     });
