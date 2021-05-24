@@ -11,7 +11,7 @@ const mostrarImg = async function(){
     const imagenes =  await nuevaImg();
 
     imagenes.map(function (element){
-        console.log(element.IMAGEN);
+        
         let img = document.createElement("img");
         let div1 = document.createElement("div");
         let context = document.createElement("div");

@@ -17,7 +17,6 @@ const mostrarCar = async function(){
         let a = document.createElement("a");
 
         a.className = "carousel-item";
-        a.href = "#";
         let ruta= `https://aqueous-journey-05187.herokuapp.com/imagenes/imagen/${element.IMAGEN}`;
 
         a.innerHTML = `<img src="${ruta}" width="180px" height="180px">`

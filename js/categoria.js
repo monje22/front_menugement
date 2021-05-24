@@ -12,7 +12,7 @@ const mostrarImg = async function(){
 
     imagenes.map(function (element){
         if(sessionStorage.getItem('categoriaDeReceta') == element.CATEGORIA){
-        console.log(element.IMAGEN);
+        
         let img = document.createElement("img");
         let div1 = document.createElement("div");
         let context = document.createElement("div");

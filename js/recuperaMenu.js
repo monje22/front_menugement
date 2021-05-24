@@ -10,8 +10,6 @@ const mostrarMenu = async function(){
     const contMenu = document.getElementById("cuerpoT");
     const menus =  await nuevaMenu();
 
-    console.log(menus);
-
     menus.map(function (element){
 
         let tr1 = document.createElement("tr");
@@ -22,7 +20,6 @@ const mostrarMenu = async function(){
         let td5 = document.createElement("td");
         let a = document.createElement("a");
 
-        console.log(element.MENU);
         td1.innerHTML = (`${element.MENU}`).charAt(0).toUpperCase() + `${element.MENU}`.toLowerCase().slice(1);
         td2.innerHTML = (`${element.DESAYUNO}`).charAt(0).toUpperCase() + `${element.DESAYUNO}`.toLowerCase().slice(1);
         td3.innerHTML = (`${element.ALMUERZO}`).charAt(0).toUpperCase() + `${element.ALMUERZO}`.toLowerCase().slice(1);

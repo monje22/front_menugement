@@ -22,7 +22,6 @@ const mostrarReceta = async function(){
         if(element.NOMBRERECETA == sessionStorage.getItem('nombre')){         
             nombreRec.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
-            console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
             parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec.append(parafo);

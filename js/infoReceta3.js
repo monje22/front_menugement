@@ -36,7 +36,6 @@ const mostrarReceta = async function(){
         if(element.NOMBRERECETA == sessionStorage.getItem('visualDes')){         
             nombreRec.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
-            console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
             parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec.append(parafo);
@@ -84,7 +83,6 @@ const mostrarReceta = async function(){
         if(element.NOMBRERECETA == sessionStorage.getItem('visualAlm')){         
             nombreRec2.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
-            console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
             parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec2.append(parafo);
@@ -132,7 +130,6 @@ const mostrarReceta = async function(){
         if(element.NOMBRERECETA == sessionStorage.getItem('visualCen')){         
             nombreRec3.innerHTML = (`${element.NOMBRERECETA}`).charAt(0).toUpperCase() + `${element.NOMBRERECETA}`.toLowerCase().slice(1);
 
-            console.log(element.INGREDIENTES);
             let parafo = document.createElement('p');
             parafo.innerHTML = element.INGREDIENTES.toLowerCase().replace(/\n/g, '<br>');
             IngrRec3.append(parafo);
