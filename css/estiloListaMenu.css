@@ -49,7 +49,7 @@ td{
     height: 30px;
     border-radius: 8px;
     color: white;
-    background-color: #275351;
+    background-color: #333333;
 }
 .ver-menu:hover{
     border-color: black;
@@ -80,7 +80,7 @@ td{
     height: 40px;
     border-radius: 8px;
     color: white;
-    background-color: #275351;
+    background-color: #333333;
     border-color: #333333; 
     font-weight: 500;
     margin-bottom: 10px;
