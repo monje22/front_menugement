@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menugement</title>
+    <!--descargarpdf-->
+    <script src="/js/html2pdf.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <!--descargarpdf-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="/css/estiloReceta.css">
     <link rel="stylesheet" href="/css/estiloPagPrincipal.css">
@@ -80,7 +85,11 @@
   
 
     <!-- sección central de recetas -->
+<<<<<<< HEAD
     <div class = "caja-cuerpo" id = "pagina1">
+=======
+    <div class = "caja-cuerpo" id = "paginaPDF">
+>>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
       <div class = "contenedor-izquierda">
         <div class = "caja-izquierda">
           <div class = "caja-imgReceta"></div>
@@ -99,6 +108,9 @@
           <p id="TiemRec"></p>
           <h2>Categoría:</h2>
           <p id="CatRec"></p>
+          <!--descargarpdf-->
+          <button id="btnCrearPdf" class="botonCerrar" style="width: auto;">Descargar Receta</button>
+          <!--descargarpdf--> 
         </div>  
       </div>    
       <div class = "caja-derecha">

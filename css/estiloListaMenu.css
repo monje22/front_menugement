@@ -49,7 +49,11 @@ td{
     height: 30px;
     border-radius: 8px;
     color: white;
+<<<<<<< HEAD
+    background-color: #275351;
+=======
     background-color: #333333;
+>>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
 }
 .ver-menu:hover{
     border-color: black;
@@ -60,7 +64,22 @@ td{
 
 }
 
+<<<<<<< HEAD
+.Add-menu{
+    margin-left: 85%;
+    /* position: relative; */
+    font-size: 20px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: #275351;
+    border-color: #333333; 
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+=======
 
+>>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
 .Add-menu:hover{
     border-color: black;
     color: rgba(0, 128, 0, 0.637);
@@ -74,6 +93,8 @@ td{
     font-family: 'Lobster', cursive;
     font-size: 25px;
 
+<<<<<<< HEAD
+=======
 }.Add-menu{
     margin-left: 75%;
     font-size: 20px;
@@ -132,4 +153,5 @@ tr{
     .Add-menu{
         margin-left: 50%;
     }
+>>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
 }
