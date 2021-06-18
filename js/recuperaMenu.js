@@ -10,11 +10,6 @@ const mostrarMenu = async function(){
     const contMenu = document.getElementById("cuerpoT");
     const menus =  await nuevaMenu();
 
-<<<<<<< HEAD
-    console.log(menus);
-
-=======
->>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
     menus.map(function (element){
 
         let tr1 = document.createElement("tr");
@@ -25,18 +20,10 @@ const mostrarMenu = async function(){
         let td5 = document.createElement("td");
         let a = document.createElement("a");
 
-<<<<<<< HEAD
-        console.log(element.MENU);
-        td1.innerHTML = `${element.MENU}`;
-        td2.innerHTML = `${element.DESAYUNO}`;
-        td3.innerHTML = `${element.ALMUERZO}`;
-        td4.innerHTML = `${element.CENA}`;
-=======
         td1.innerHTML = (`${element.MENU}`).charAt(0).toUpperCase() + `${element.MENU}`.toLowerCase().slice(1);
         td2.innerHTML = (`${element.DESAYUNO}`).charAt(0).toUpperCase() + `${element.DESAYUNO}`.toLowerCase().slice(1);
         td3.innerHTML = (`${element.ALMUERZO}`).charAt(0).toUpperCase() + `${element.ALMUERZO}`.toLowerCase().slice(1);
         td4.innerHTML = (`${element.CENA}`).charAt(0).toUpperCase() + `${element.CENA}`.toLowerCase().slice(1);
->>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
         a.innerHTML = `<input type="button" class="ver-menu"  value="Detalles">`;
         a.href = "/html/visualizarMenu.html";
         a.addEventListener("click",()=>{mandarReceta(element.DESAYUNO,element.ALMUERZO,element.CENA,element.MENU)});

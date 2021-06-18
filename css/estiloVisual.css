@@ -54,21 +54,12 @@
     border-radius: 5px;
     font-weight: 900;
 
-<<<<<<< HEAD
-    margin-left: 50%;
-=======
     
->>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
     margin-bottom: 20px;
   align-items: center;
   justify-content: center;
     
 }
-<<<<<<< HEAD
-p{
-  font-family: 'Nunito Sans', sans-serif;
-  
-=======
 
 p{
   font-family: 'Nunito Sans', sans-serif;
@@ -128,5 +119,4 @@ p{
     flex-direction: column;
   }
 
->>>>>>> acdcfb3a634e92a6bc713a38683a4f852578a8ae
 }
