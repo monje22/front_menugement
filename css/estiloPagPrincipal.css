@@ -1,3 +1,38 @@
+.subsubmenu1{
+    background-color:#333333  ;
+    margin-left: 124px;
+    margin-top: -52px;
+    
+    height: 155px;
+    width: 95px;
+    visibility: hidden;
+}
+.subsubmenu2{
+    background-color: #333333;
+    margin-left: 124px;
+    margin-top: -60px;
+    margin-bottom: 0px;
+    height: 265px;
+    width: 95px;
+    visibility: hidden;
+}
+.subsubmenu3{
+    background-color:#333333 ;
+    margin-left: 124px;
+    margin-top: -65px;
+    margin-bottom: 0px;
+    height: 215px;
+    width: 185px;
+    visibility: hidden;
+}
+
+#dificultad{
+    margin-top: -100px;
+}
+#tiempo{
+    margin-top: -205px;
+}
+
 header{
     margin-top: -10px;
     margin-left: -10px;
@@ -222,6 +257,7 @@ h2{
     position: absolute;
     background-color: #333333;
     width: 105%;
+    height: 190px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s;
@@ -248,6 +284,21 @@ h2{
     visibility: visible;
     opacity: 1;
 }
+
+
+.menu .submenu #categoriaHover:hover .subsubmenu1{
+    visibility: visible;
+    opacity: 1;
+}
+.menu .submenu #dificultadHover:hover .subsubmenu2{
+    visibility: visible;
+    opacity: 1;
+}
+.menu .submenu #tiempoHover:hover .subsubmenu3{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /*prueba pop up*/
 
@@ -334,8 +385,26 @@ h2{
  @media (max-width: 1400px){
     .submenu{
 
-        width: 95% ;
+        width: 125% ;
     }
+    .subsubmenu1{
+        margin-left: 110px;
+        margin-top: -52px;
+        width: 95px;
+    }
+
+    .subsubmenu2{
+        margin-left: 110px;
+        width: 95px;
+    }
+
+    .subsubmenu3{
+        margin-left: 110px;
+        height: 215px;
+        width: 185px;
+    }
+    
+
     .menu > li > a{
         display: block;
         padding: 15px 20px;
@@ -356,8 +425,13 @@ h2{
   @media (max-width: 1200px){
     .submenu{
     
-        width: 90% ;
+        width: 135% ;
     }
+    .subsubmenu1, .subsubmenu2, .subsubmenu3{
+        margin-left: 106px;
+        }
+
+    
     .menu > li > a{
         display: block;
         padding: 15px 15px;
@@ -374,7 +448,7 @@ h2{
   @media (max-width: 1125px){
     .submenu{
        padding-left: 35px;
-        width: 88% ;
+        width: 170% ;
     }
     .menu > li > a{
         display: block;
@@ -395,8 +469,12 @@ h2{
   @media (max-width: 1050px){
     .submenu{
         padding-left: 20px;
-         width: 95% ;
+         width: 175% ;
      }
+     .subsubmenu1, .subsubmenu2, .subsubmenu3{
+        margin-left: 102px;
+        }
+
     .menu > li > a{
         display: block;
         padding: 15px 5px;
@@ -406,7 +484,7 @@ h2{
     .submenu{
         position: absolute;
         background-color: #333333;
-        width: 95%;
+       
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.2s;
@@ -433,7 +511,7 @@ h2{
   @media (max-width: 960px){
     .submenu{
         padding-left: 15px;
-         width: 97% ;
+         width: 165% ;
      }
     .menu > li > a{
         display: block;
@@ -460,7 +538,7 @@ h2{
     
     .submenu{
         padding-left: 8px;
-         width: 101%;
+         width: 180%;
      }
     .menu > li > a{
         display: block;
@@ -494,6 +572,29 @@ h2{
 
 
   @media (max-width: 780px){/*625,635Hoy*/
+    #categoria{
+        margin-top: -10px;
+    }
+    #dificultad{
+        margin-top: -5px;
+    }
+    #tiempo{
+        margin-top: -10px;
+    }
+    .subsubmenu1{
+        margin-left: 1280px;
+        margin-top: 5px;
+    }
+    .subsubmenu2{
+        margin-left: 1280px;
+        margin-top: 2px;
+        height: 300px;
+    }
+    .subsubmenu3{
+        margin-left: 1280px;
+        margin-top: 3px;
+        height: 240px;
+    }
     .checkbtn{
         display: block;
       }
@@ -520,6 +621,7 @@ h2{
         
         height: 145px;
     }
+   
 
     ul{
         position: absolute ;
@@ -610,6 +712,17 @@ h2{
     font-size: 25px;
     }  
   }
+
+  @media (max-width: 770px){
+    .subsubmenu1, .subsubmenu2, .subsubmenu3{
+        margin-left: 165%;
+        margin-top: 5px;
+    }
+    .subsubmenu3{
+        padding-left: 10px;
+    }
+
+  }  
 @media(max-width: 600px){
     
 
@@ -655,3 +768,14 @@ h2{
       width: 100px;
   }    
 } 
+
+@media(max-width: 480px){
+.submenu{
+    text-align: left;
+    padding-left: 100px;
+}
+.subsubmenu1, .subsubmenu2, .subsubmenu3{
+    margin-left: 145%;
+}
+
+}

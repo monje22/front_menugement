@@ -27,23 +27,47 @@
     <i class="fas fa-bars"></i>
     </label>
 
-        <ul class="menu">
-          <li><a href="/./index.html">Inicio</a></li>
-          <li><a href="/html/menus.html">Programar Menú</a></li>
-          <li><a href="#">Categoría</a>
-            <div class ="responsive-cat">
-              <ul class="submenu">
-                <li><a href="/html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
-                <li><a href="/html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
-                <li><a href="/html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
-              </ul>
-            </div>
+    <ul class="menu">
+      <li><a href="/./index.html">Inicio</a></li>
+      <li><a href="/html/menus.html">Programar Menú</a></li>
+      <li><a href="#">Filtrar</a>
+        
+        <ul class="submenu">
+          <li id = "categoriaHover"><a id= "categoria">Categoría</a>
+            <ul class = "subsubmenu1">
+              
+              <li><a href="/html/paginaCategoria.html" id="categoria1" onclick="guardarOp1()">Desayuno</a></li>
+              <li><a href="/html/paginaCategoria.html" id="categoria2" onclick="guardarOp2()">Almuerzo</a></li>
+              <li><a href="/html/paginaCategoria.html" id="categoria3" onclick="guardarOp3()">Cena</a></li>
+            
+           </ul>
           </li>
-          <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
-          <li><a href="#footer">Contáctanos</a></li>
-          <li><a href="/html/addReceta.html">Añadir receta</a></li>
-          
+
+          <li id = "dificultadHover"><a id = "dificultad">Dificultad</a>
+            <ul class = "subsubmenu2">
+              <li><a href="/html/paginaDificultad.html" id="dif1" onclick="guardarDif1()">★</a></li>
+              <li><a href="/html/paginaDificultad.html" id="dif2" onclick="guardarDif2()">★★</a></li>
+              <li><a href="/html/paginaDificultad.html" id="dif3" onclick="guardarDif3()">★★★</a></li>
+              <li><a href="/html/paginaDificultad.html" id="dif4" onclick="guardarDif4()">★★★★</a></li>
+              <li><a href="/html/paginaDificultad.html" id="dif5" onclick="guardarDif5()">★★★★★</a></li>
+          </ul>
+          </li>
+          <li id = "tiempoHover"><a id = "tiempo">Tiempo De <br>Preparación</a>
+            <ul class = "subsubmenu3">
+              <li><a href="/html/paginaTiempo.html" id="tie1" onclick="guardarTie1()">Menor a 15 min</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie2" onclick="guardarTie2()">Entre 15 a 30 Min</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie3" onclick="guardarTie3()">Entre 30 a 60 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie4" onclick="guardarTie4()">Mayores a 60 minutos</a></li>
+          </ul>
+        </li>
         </ul>
+      
+      </li>
+      <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
+      <li><a href="#footer">Contáctanos</a></li>
+      <li><a href="/html/addReceta.html">Añadir receta</a></li>
+      
+    </ul>
         <div class = "seccionMQ"></div>
     </nav>
     
@@ -104,6 +128,39 @@
           document.getElementById("vid").load();
         }
       </script>
+      <script>
+        function guardarDif1(){
+          sessionStorage.setItem('DificultadDeReceta',1);
+        }
+        function guardarDif2(){
+          sessionStorage.setItem('DificultadDeReceta',2);
+        }
+        function guardarDif3(){
+          sessionStorage.setItem('DificultadDeReceta',3);
+        }
+        function guardarDif4(){
+          sessionStorage.setItem('DificultadDeReceta',4);
+        }
+        function guardarDif5(){
+          sessionStorage.setItem('DificultadDeReceta',5);
+        }
+      </script>
+
+      <script>
+        function guardarTie1(){
+          sessionStorage.setItem('TiempoDeReceta',1);
+        }
+        function guardarTie2(){
+          sessionStorage.setItem('TiempoDeReceta',2);
+        }
+        function guardarTie3(){
+          sessionStorage.setItem('TiempoDeReceta',3);
+        }
+        function guardarTie4(){
+          sessionStorage.setItem('TiempoDeReceta',4);
+        }
+      </script>
+
         <div class = "cajas-1">     
           <br>
           <h2 id="footer" style="font-family: 'Lato', sans-serif;">SOBRE NOSOTROS</h2>

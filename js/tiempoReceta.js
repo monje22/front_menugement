@@ -9,7 +9,6 @@ const nuevaImg = async() =>{
 const mostrarImg = async function(){
     const contImg = document.getElementById("adminImg");
     const imagenes =  await nuevaImg();
-    const codigo = 4;
 
     imagenes.map(function (element){
         let tiempo = element.TIEMPOPREP;
@@ -21,7 +20,7 @@ const mostrarImg = async function(){
             pos = pos-1;
         }
 
-        if(codigo == 1){
+        if(sessionStorage.getItem("TiempoDeReceta") == 1){
         if(tiempo < 15){
         /*sessionStorage.getItem('categoriaDeReceta')*/
         let img = document.createElement("img");
@@ -40,7 +39,7 @@ const mostrarImg = async function(){
         }
         }
 
-        if(codigo == 2){
+        if(sessionStorage.getItem("TiempoDeReceta") == 2){
             if(tiempo >= 15 && tiempo < 30){
             /*sessionStorage.getItem('categoriaDeReceta')*/
             let img = document.createElement("img");
@@ -59,7 +58,7 @@ const mostrarImg = async function(){
             }
             }
 
-            if(codigo == 3){
+            if(sessionStorage.getItem("TiempoDeReceta") == 3){
                 if(tiempo >= 30 && tiempo < 60){
                 /*sessionStorage.getItem('categoriaDeReceta')*/
                 let img = document.createElement("img");
@@ -78,7 +77,7 @@ const mostrarImg = async function(){
                 }
                 }
 
-                if(codigo == 4){
+                if(sessionStorage.getItem("TiempoDeReceta") == 4){
                     if(tiempo >= 60){
                     /*sessionStorage.getItem('categoriaDeReceta')*/
                     let img = document.createElement("img");
