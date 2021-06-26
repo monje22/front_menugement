@@ -62,10 +62,10 @@
           </li>
           <li id = "tiempoHover"><a id = "tiempo">Tiempo De <br>Preparación</a>
             <ul class = "subsubmenu3">
-              <li><a href="/html/paginaTiempo.html" id="tie1" onclick="guardarTie1()">Menor a 15 min</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie2" onclick="guardarTie2()">Entre 15 a 30 Min</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie3" onclick="guardarTie3()">Entre 30 a 60 minutos</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie4" onclick="guardarTie4()">Mayores a 60 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie1" onclick="guardarTie1()">Menor a 15 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie2" onclick="guardarTie2()">De 15 a 30 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie3" onclick="guardarTie3()">De 30 a 60 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie4" onclick="guardarTie4()">Mayor a 60 minutos</a></li>
           </ul>
         </li>
         </ul>
@@ -73,7 +73,7 @@
       </li>
       <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
       <li><a href="#footer">Contáctanos</a></li>
-      <li><a href="/html/addReceta.html">Añadir receta</a></li>
+      <li><a href="/html/addReceta.html">Añadir Receta</a></li>
       
     </ul>
         <div class = "seccionMQ"></div>
@@ -107,9 +107,8 @@
 
     <!-- Fin del header -->
   
-
     <!-- sección central de recetas -->
-    <div class = "caja-cuerpo" id = "paginaPDF">
+    <div class = "caja-cuerpo" id = "paginaPDF" style="flex: 1;">
       <div class = "contenedor-izquierda">
         <div class = "caja-izquierda">
           <div class = "caja-imgReceta"></div>
@@ -129,18 +128,18 @@
           <h2>Categoría:</h2>
           <p id="CatRec"></p>
           <!--descargarpdf-->
-          <button id="btnCrearPdf" class="botonCerrar" style="width: auto;">Descargar Receta</button>
+          <button id="btnCrearPdf" data-html2canvas-ignore="true" class="descargar"></button>
           <!--descargarpdf--> 
         </div>  
       </div>    
       <div class = "caja-derecha">
         <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec"></nav></div>
-        <div class = "caja-ingredientes" id="ingreRec">
+        <div class = "caja-ingredientes" style="text-transform: capitalize;" id="ingreRec">
           <p><b>Ingredientes:</b></p>
           
         </div>
 
-        <div class = "caja-descripcion" id="DescRec">
+        <div class = "caja-descripcion" style="text-transform: capitalize;" id="DescRec">
           <p><b>Preparación:</b></p>
           
         </div>

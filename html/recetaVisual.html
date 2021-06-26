@@ -63,10 +63,10 @@
           </li>
           <li id = "tiempoHover"><a id = "tiempo">Tiempo De <br>Preparación</a>
             <ul class = "subsubmenu3">
-              <li><a href="/html/paginaTiempo.html" id="tie1" onclick="guardarTie1()">Menor a 15 min</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie2" onclick="guardarTie2()">Entre 15 a 30 Min</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie3" onclick="guardarTie3()">Entre 30 a 60 minutos</a></li>
-              <li><a href="/html/paginaTiempo.html" id="tie4" onclick="guardarTie4()">Mayores a 60 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie1" onclick="guardarTie1()">Menor a 15 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie2" onclick="guardarTie2()">De 15 a 30 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie3" onclick="guardarTie3()">De 30 a 60 minutos</a></li>
+              <li><a href="/html/paginaTiempo.html" id="tie4" onclick="guardarTie4()">Mayor a 60 minutos</a></li>
           </ul>
         </li>
         </ul>
@@ -74,7 +74,7 @@
       </li>
       <li><a href="#IrVentanaFlotante">Sobre Nosotros</a></li>
       <li><a href="#footer">Contáctanos</a></li>
-      <li><a href="/html/addReceta.html">Añadir receta</a></li>
+      <li><a href="/html/addReceta.html">Añadir Receta</a></li>
       
     </ul>
         <div class = "seccionMQ"></div>
@@ -107,10 +107,9 @@
     </div>
 
     <!-- Fin del header -->
-  
-
+    
     <!-- sección central de recetas -->
-    <div class = "paginaPDF" id = "paginaPDF">
+    <div class = "paginaPDF" id = "paginaPDF" style="flex: 1;">
     <div class = "caja-cuerpo" id = "pagina1">
       <div class = "contenedor-izquierda">
         <div class = "caja-izquierda">
@@ -131,14 +130,14 @@
           <h2>Categoría:</h2>
           <p id="CatRec"></p>
           <!--descargarpdf-->
-          <button id="btnCrearPdf" class="botonCerrar" style="width: auto;">Descargar Menú</button>
+          <button id="btnCrearPdf" data-html2canvas-ignore="true" class="descargar"></button>
           <!--descargarpdf--> 
         </div>  
       </div>    
       <div class = "caja-derecha">
         <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec"></nav></div>
         <br>
-        <div class = "desaAlmuCena">
+        <div class = "desaAlmuCena" data-html2canvas-ignore="true">
           <div class="subdesaAlmuCena">
               <div class = "activo"><a href = "#pagina1">Desayuno</a></div>
               <div class = "almuerzito"><a href = "#pagina2">Almuerzo</a></div>
@@ -185,7 +184,7 @@
       <div class = "caja-derecha">
         <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec2"></nav></div>
         <br>
-        <div class = "desaAlmuCena">
+        <div class = "desaAlmuCena" data-html2canvas-ignore="true">
           <div class="subdesaAlmuCena">
               <div class = "desayunito"><a href = "#pagina1">Desayuno</a></div>
               <div class = "activo"><a href = "#pagina2">Almuerzo</a></div>
@@ -231,7 +230,7 @@
       <div class = "caja-derecha">
         <div class = "caja-nombreReceta"><nav style="font-family: 'Lobster', cursive;color:#333333;" id="nomRec3"></nav></div>
         <br>
-        <div class = "desaAlmuCena">
+        <div class = "desaAlmuCena" data-html2canvas-ignore="true">
           <div class="subdesaAlmuCena">
               <div class = "desayunito"><a href = "#pagina1">Desayuno</a></div>
               <div class = "almuerzito"><a href = "#pagina2">Almuerzo</a></div>

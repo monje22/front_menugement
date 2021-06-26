@@ -263,3 +263,85 @@ h5{
 h2{
     margin-bottom: -10px;
 }
+
+.descargar{
+    width: 45px;
+    height: 45px;
+    top: 93px;
+    right: 5px;
+    position: fixed;
+    border-style: none;
+    background-image: url("/Image_Folder/descargarIcono.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.descargar:hover{
+
+    width: 128px;
+    height: 30px;
+    position: fixed;
+    border-radius: 5px;
+    background-image: url("/Image_Folder/descargarReceta.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media (max-width: 1250px){
+    .caja-izquierda{
+        font-family: 'Lato', cursive;
+        /*font-family: 'Lobster', cursive*/
+        position: static;/*para que se quede en la pantalla por mas que se use el scroll*/
+        top:0px;/*para que se quede con ese margin arriba el sticky*/
+        text-align: center;
+        display: block;
+        margin: auto;
+        color: #333333;
+        height: auto;
+        padding-bottom: 5px;
+        width:  350px;   
+    }
+
+}
+    @media (max-width: 1000px){
+        .caja-izquierda{
+
+            width:  300px;   
+        }
+
+    }
+    @media (max-width: 850px){
+        .caja-izquierda{
+     
+            width:  250px;   
+        }
+    
+        
+    
+    }
+    @media (max-width: 750px){
+        .caja-izquierda{
+            
+            width:  300px;   
+        }
+
+        .caja-cuerpo{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: -8px;
+            margin-right: -2px;
+        
+        }
+        .contenedor-izquierda{
+            display: flex;
+            flex-direction: row;
+            margin-right: -16px;
+        }
+    
+    }
