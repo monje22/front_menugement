@@ -122,7 +122,7 @@
     <div class="inputs1">
       <input type="text" class="textoCaja" name="" id="NombReceta" pattern="[,áéíóúa-zA-Z ÁÉÍÓÚñÑ]+" title="Sólo se aceptan caracteres alfabéticos"  maxlength="70" minlength="10" required><br><br>
       <input type="number" class="numeroCaja" name="" id="Dificultad" value="1" min="1" max="5"><br><br>
-      <select name="" class="cateCaja" id="categoria">
+      <select name="" class="cateCaja" id="categoriaForm">
         <option value="Desayuno">Desayuno</option>
         <option value="Almuerzo">Almuerzo</option>
         <option value="Cena">Cena</option>
@@ -327,14 +327,14 @@
         const inputfile = document.getElementById("myImage");
         const nombReceta = document.getElementById("NombReceta");
         const dificultad = document.getElementById("Dificultad");
-        const categoria = document.getElementById("categoria");
+        const categoria = document.getElementById("categoriaForm");
         const ingredientes = document.getElementById("ingredientes");
         const preparacion = document.getElementById("preparar");
         const tiempoPrepa = document.getElementById("rangeInput");
 
         formulario.addEventListener("submit", function(e){
           e.preventDefault();
-          console.log(nombReceta.value);
+          console.log(categoria.value);
           sessionStorage.setItem('datoNombre',nombReceta.value);
           const data = new FormData();
           data.append("file", inputfile.files[0]);
@@ -347,7 +347,6 @@
           preparacion: preparacion.value,
           tiempoPrepa: tiempoPrepa.value
           }
-          
           
           try {
             fetch("https://aqueous-journey-05187.herokuapp.com/receta/registrar", {
